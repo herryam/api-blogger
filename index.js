@@ -8,12 +8,12 @@ const corsOptions = {
 };
 
 app.get('/', cors(corsOptions), (req, res) => {
-    res.json([
+    res.json(
         {
             "user": "Herry",
             "pass": "whoami"
         }
-    ]);
+    );
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
